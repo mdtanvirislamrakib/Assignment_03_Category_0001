@@ -63,8 +63,8 @@
             <!-- navbar section start -->
             <nav class="bg-pink-50 mb-16">
                 <div class="navbar bg-base-100 w-11/12 mx-auto bg-pink-50">
-                    <div class="navbar-start flex items-center gap-2 justify-">
-                        <img src="assets/logo-header.png" alt class="w-9">
+                    <div class="navbar-start flex items-center gap-2">
+                        <img src="assets/logo-header.png" alt class="w-10">
                         <h1
                             class="text-2xl font-main-font hidden md:block">Browse<span
                                 class="text-primary-color">4</span>Pets</h1>
@@ -497,7 +497,7 @@
 
             <!-- price section -->
 
-            <section class="my-14 lg:my-32 w-11/12 mx-auto md:space-y-10 space-y-5">
+            <section class="mt-14 lg:mt-32 w-11/12 mx-auto md:space-y-10 space-y-5 ">
                 <h1 class="font-sub-font md:text-5xl text-2xl font-bold">Everyday low Price</h1>
 
                 <div class="md:grid md:grid-cols-3 grid-cols-1 gap-6 space-y-5 md:space-y-0">
@@ -535,24 +535,25 @@
 
 
             <!-- submit section -->
-            <section class="w-11/12 bg-nav-bg mx-auto rounded-lg">
-                <div class="flex flex-col md:flex-row items-center justify-between md:px-40 md:py-20 px-5 py-10">
+            <section class="w-11/12 bg-nav-bg mx-auto rounded-lg relative md:top-28 top-14">
+                <div class="flex flex-col md:flex-row items-center justify-between md:px-40 md:py-10 px-5 py-5">
                     <div>
                         <img src="assets/cute-pet-mid.png" alt="">
                     </div>
 
 
-                    <div >
+                    <div class="space-y-5">
                         <h1 class="md:text-4xl text-2xl font-bold font-sub-font">Get Pawsome News!</h1>
-                        <p>Exclusive training tips, ticks, product deals and more.</p>
+                        <p class="font-main-font text-gray-500">Exclusive training tips, ticks, product deals and more.</p>
 
 
-                        <div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        <div class="space-y-6">
+                            <input type="text" placeholder="Enter Email.." class="input w-full" />
 
-                            <button
-                            class="font-main-font text-bold md:py-2 md:px-7 py-1 px-3 rounded-lg bg-primary-color">Find
-                            a pet</button>
+                            <div class="flex md:justify-start justify-center md:items-start items-center">
+                               <button class="font-main-font text-bold md:py-2 md:px-7 py-1 px-3 rounded-lg bg-primary-color">Find a pet</button> 
+                            </div>
+                            
                         </div>
                         
 
@@ -562,5 +563,41 @@
             </section>
 
         </main>
+
+
+        <footer class="bg-card-bg ">
+            <div class="flex w-11/12 mx-auto justify-between flex-col md:flex-row md:space-y-0 space-y-5 md:pt-40 md:pb-10 pt-20 pb-5">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 md:text-2xl text-xl font-sub-font font-bold">
+                        <img src="assets/logo-footer.png" alt="" class="w-8">
+                        <h1>Browse<span class="text-primary-color">4</span>Pets</h1>
+                    </div>
+                    <p class="text-gray-500">Discover a world of treats, toys,<br>and essentials handpicked for your furry friends</p>
+                </div>
+                <div>
+                    <h2 class="text-lg font-main-font md:mb-4 mb-1">Find a pet</h2>
+    
+                    <p class="text-lg font-main-font md:mb-4 mb-1">Breeds</p>
+    
+                    <p class="text-lg font-main-font">Contact us</p>
+                </div>
+                <div class="md:space-y-8 flex flex-col">
+                    <div></div>
+                    <div></div>
+                    <div class="space-y-1">
+                        <h3 class="font-sub-font">Follow Us</h3>
+    
+                        <div class="flex items-center gap-5 text-lg">
+                            <i class="fa-brands fa-facebook cursor-pointer"></i>
+                            <i class="fa-brands fa-instagram cursor-pointer"></i>
+                            <i class="fa-brands fa-linkedin cursor-pointer"></i>
+                            <i class="fa-brands fa-youtube cursor-pointer"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </footer>
     </body>
 </html>
