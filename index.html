@@ -42,6 +42,10 @@
                 'primary-color': 'rgb(255, 220, 38)',
                 'nav-bg': 'rgb(255, 249, 244)',
                 'card-bg': 'rgb(249, 223, 138)',
+                'card-color-1': 'rgb(248, 204, 251)',
+                'card-color-2': 'rgb(172, 210, 253)',
+                'card-color-3': 'rgb(255, 249, 244)',
+                'card-color-4': 'rgb(249, 223, 138)',
               },
               fontFamily: {
                 'main-font': 'Sora',
@@ -117,19 +121,19 @@
             </nav>
 
             <!-- hero section start -->
-            <section class="w-11/12 mx-auto min-h-screen" id="banner">
+            <section class="w-11/12 mx-auto lg:py-48 py-8" id="banner">
 
                 <!-- text content -->
-                <div class="space-y-5 z-10">
+                <div class="space-y-5 relative lg:bottom-40 bottom-20">
                     <h1
-                        class="font-sub-font text-3xl md:text-5xl font-bold">Pamper
+                        class="font-sub-font text-2xl md:text-5xl font-bold">Pamper
                         Your Pet,<br>Because They Deserve<br>the Bes</h1>
-                    <p class="text-gray-500 font-main-font">Discover a world
+                    <p class="text-gray-500 font-main-font md:text-lg text-xs">Discover a world
                         of treats, toys, and essentials handpicked
                         for<br>your furry friends. Shop now and make tails
                         wag with joy!</p>
                     <button
-                        class="font-main-font text-bold py-2 px-7 rounded-lg bg-primary-color">Find
+                        class="font-main-font text-bold md:py-2 md:px-7 py-1 px-3 rounded-lg bg-primary-color">Find
                         a pet</button>
                 </div>
 
@@ -492,6 +496,71 @@
 
 
             <!-- price section -->
+
+            <section class="my-14 lg:my-32 w-11/12 mx-auto md:space-y-10 space-y-5">
+                <h1 class="font-sub-font md:text-5xl text-2xl font-bold">Everyday low Price</h1>
+
+                <div class="md:grid md:grid-cols-3 grid-cols-1 gap-6 space-y-5 md:space-y-0">
+
+                    <!-- big card -->
+                    <div class="bg-gradient-to-r from-card-color-1 to-card-color-2 flex items-center justify-between rounded-lg flex-col md:flex-row col-span-2">
+                        <div class="md:static relative top-10 -left-20 pl-10">
+                            <p class="font-main-font md:text-lg text-sm mb-3 hidden md:block">Under Price</p>
+                            <h3 class="font-bold font-sub-font md:text-4xl text-xl">Pet Grooming Mitt</h3>
+                            <p class="text-white hidden md:block font-sub-font lg:mb-4 mb-2">(Easy Hair Removal)</p>
+                            <h1 class="font-sub-font font-bold md:text-5xl text-2xl text-white md:text-black">$7.99</h1>
+                        </div>
+
+                        <div  class="w-2/4 md:static relative -right-10">
+                            <img src="assets/cute-dog-mid.png" alt="" class="static md:relative -bottom-10">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <!-- small card -->
+                    <div class="bg-gradient-to-r from-card-color-3 to-card-color-4  rounded-lg col-span-1 flex relative">
+                        <div class="md:relative md:top-24 md:space-y-5 md:left-5 relative top-5 left-5 space-y-2">
+                            <h1 class="text-xl md:text-4xl font-bold font-sub-font w-40 md:w-full">T-Shirt for Dogs</h1>
+                            <p class="font-main-font text-primary-color font-bold md:text-3xl text-xl">$7.99</p>
+                        </div>
+                        <div class="md:absolute md:-bottom-4 md:-right-2 relative -bottom-4 w-3/4">
+                            <img src="assets/cute-pet-mid.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <!-- submit section -->
+            <section class="w-11/12 bg-nav-bg mx-auto rounded-lg">
+                <div class="flex flex-col md:flex-row items-center justify-between md:px-40 md:py-20 px-5 py-10">
+                    <div>
+                        <img src="assets/cute-pet-mid.png" alt="">
+                    </div>
+
+
+                    <div >
+                        <h1 class="md:text-4xl text-2xl font-bold font-sub-font">Get Pawsome News!</h1>
+                        <p>Exclusive training tips, ticks, product deals and more.</p>
+
+
+                        <div>
+                            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+
+                            <button
+                            class="font-main-font text-bold md:py-2 md:px-7 py-1 px-3 rounded-lg bg-primary-color">Find
+                            a pet</button>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+            </section>
+
         </main>
     </body>
 </html>

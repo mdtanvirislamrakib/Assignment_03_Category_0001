@@ -29,12 +29,12 @@
     50% {
         background-color:rgba(0, 0, 255, 0.329); 
         left:200px; 
-        top:300px;
+        top:240px;
     }
     75% {
         background-color:rgba(0, 128, 0, 0.329);
         left:0px;
-        top:300px;
+        top:240px;
     }
     100% {
         background-color:rgba(255, 0, 0, 0.329);
